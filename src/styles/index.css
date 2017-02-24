@@ -1,0 +1,310 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+/* Banner image */
+img {
+  max-width: 100%;
+}
+
+/* Nav link styling */
+a {
+  color: $nav-a-text;
+}
+a:hover, a:focus {
+  color: $nav-a-text;
+}
+
+a:hover {
+  color: #000000;
+  text-decoration: none;
+}
+
+/* Panel heading styling */
+.panel-default > .panel-heading {
+  background-color: $green-light;
+  border-color: #ddd;
+}
+
+/* Default button styling - Filter Button */
+.btn-default:hover {
+  color: $button-text-dark;
+  background-color: $green-light;
+  border-color: $default-btn-border;
+}
+
+.btn-default:focus {
+  color: $button-text-dark;
+  background-color: $green-light;
+  border-color: $default-btn-border;
+}
+
+.btn-default:active {
+  color: $button-text-dark;
+  background-color: $green-light;
+  border-color: $default-btn-border;
+}
+
+/* Primary button styling - Resume Button */
+.btn-primary {
+  color: $button-text-light;
+  background-color: $green-dark;
+  border-color: $primary-btn-border;
+}
+
+.btn-primary:hover {
+  color: $button-text-light;
+  background-color: $green-light;
+  border-color: $primary-btn-border;
+}
+
+.btn-primary.focus {
+  color: $button-text-light;
+  background-color: $green-light;
+  border-color: $primary-btn-border;
+}
+
+.btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn.active.focus {
+  outline: none;
+  outline-color: $primary-btn-border;
+  outline-style: none;
+  outline-width: thin;
+  background-color: $green-dark;
+}
+
+.btn-primary:focus, .btn-primary.focus {
+  color: $button-text-light;
+  border-color: $primary-btn-border;
+}
+
+.btn-primary:active, .btn-primary.active, .open > .dropdown-toggle.btn-primary {
+  color: $button-text-light;
+  background-color: #8ca424;
+  border-color: $primary-btn-border;
+}
+
+/* About component */
+.about {
+  text-align: center;
+  padding: 8vh 0vw 0vh 0vw;
+}
+
+/* Resume component */
+.resume {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2vh 0;
+}
+
+/* Resume filter size and positioning */
+.filters {
+  margin-bottom: 20px;
+  max-width:60vw;
+}
+
+/* Skills component */
+.skills.header {
+  text-align: center;
+}
+
+/* Skills flexbox container */
+.skills-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 55vw;
+  justify-content: center;
+}
+
+/* Skills panel */
+.skills-panel {
+  background-color: $green-vlight;
+  border-color: #ddd;
+  width: 40vw;
+}
+
+/* Individual skill flex alignment */
+.child-skill {
+  text-align: center;
+  display: inline-block;
+  margin: 10px 0 0 2%;
+  flex-grow: 1;
+  height: 30px;
+  width: calc(86% * (1/4));
+  justify-content: center;
+}
+
+/* Experience component */
+.experience.header {
+  text-align: center;
+}
+
+/* Experience panel size */
+.experience {
+  max-width: 55vw;
+}
+
+/* Education component */
+.education.header {
+  text-align: center;
+}
+
+/* Education panel size */
+.education {
+  max-width: 55vw;
+}
+
+/* Contact component */
+.contact {
+  text-align: center;
+  padding: 5vh 0;
+}
+
+/* Contact component conent sizes and spacing */
+.email {
+  height: 50px;
+  width:60px;
+}
+
+.email-address {
+  margin-right: 25px;
+}
+
+.email-logo {
+  height: 150px;
+  width: 150px;
+  margin-bottom: 5vh;
+  margin-left: 5vw;
+  margin-right: 5vw;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Contact buttons */
+.contact-btn, .contact-btn:link, .contact-btn:visited {
+  color: #333;
+  font-size: .8em;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  min-width: 100px;
+  max-width: 60%;
+  position: relative;
+  margin: 0 auto;
+  border: 2px solid transparent;
+  transition: all .2s cubic-bezier(0.455, 0.030, 0.515, 0.955);
+
+  &:after, &:before {
+    content: "";
+    position: absolute;
+    left: - 1em;
+    top: -2px;
+    height: 3.3em;
+    width: 0;
+    border: 1px solid #97b494;
+    transition: inherit;
+  }
+
+  &:after {
+    left: auto;
+    right: -1em;
+  }
+
+  &:hover {
+    border-color: #97b494;
+    transition: border-color .2s .2s cubic-bezier(0.455, 0.030, 0.515, 0.955);
+    
+    &:after, &:before {
+      right: -2px;      
+      transition: all .2s cubic-bezier(0.455, 0.030, 0.515, 0.955);
+    }
+    
+    &:before {
+      left: -2px;
+      right: auto;
+    }
+  }
+}
+
+/* Banner styles, effects, and align*/
+.blurred {
+  -webkit-filter: blur(2px); /* Chrome, Safari, Opera */
+  filter: blur(2px);
+}
+
+.banner {
+  background-size: cover;
+  transition: 0.5s ease all;
+}
+
+.banner-container {
+  display: flex;
+  justify-content: center;
+}
+
+
+/* Navbar styling pre-scroll */
+.navbar {
+  opacity: 0.94;
+  transition: all 0.5s ease;
+  margin-bottom: 0px;
+}
+
+/* Navbar styling post-scroll */
+.nav-scroll {
+  opacity: 1;
+  transition: all 0.5s ease;
+}
+
+/* Home page styling */
+.welcome {
+  height: 20vh;
+}
+
+.intro-container {
+  display: flex;
+  flex-direction: row;
+  background-color: #ffffff;
+  height: 95vh;
+  opacity: 0;
+  transition: all 1s ease;
+  justify-content: center;
+}
+
+.intro-container-scroll {
+  opacity: 1;
+  transition: all 1.5s ease;
+  border-bottom-color: #5d5d5d;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+}
+
+.me {
+  height: 63%;
+  width: 55%;
+  max-height: 300px;
+  max-width: 300px;
+  border: 8px solid #333;
+  border-radius: 20px;
+  margin-top: 10%;
+}
+
+.description {
+  margin-top: 15%;
+  margin-left: 5%;
+  max-width: 550px;
+  text-align: left;
+}
+
+
+/* 404 styling */
+.notFound {
+  text-align: center;
+}
