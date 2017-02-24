@@ -1,14 +1,12 @@
 import React, { Component } from 'react';
 import './App.css';
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <h2>App</h2>
-      </div>
-    );
-  }
-}
+import { Banner } from './components/banner';
 
-export default App;
+export const App = ( { children } ) => {
+    return(
+        <div>
+          <Banner />
+        </div>
+    );
+};
