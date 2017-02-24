@@ -2,7 +2,7 @@ import React from 'react';
 import { render } from 'react-dom';
 import { App } from './App';
 import { Router, Route, IndexRoute, browserHistory } from 'react-router';
-import './styles/index.css';
+import './styles/index.scss';
 
 import { NotFound } from './components/not_found';
 import About from './components/about/about';
