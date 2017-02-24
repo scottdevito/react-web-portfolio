@@ -10,11 +10,11 @@ export const Skills = (props) => {
 
                     <p className="child-skill">React JS</p>
 
+                    <p className="child-skill">Redux</p>
+
                     <p className="child-skill">HTML 5</p>
 
-                    <p className="child-skill">CSS3/SCSS</p>
-
-                    <p className="child-skill">Meteor JS</p>
+                    <p className="child-skill">CSS3/SASS</p>
 
                     <p className="child-skill">Git/GitHub</p>
 
@@ -26,7 +26,7 @@ export const Skills = (props) => {
 
                     <p className="child-skill">Agile Development</p>
 
-                    <p className="child-skill"> Testing solutions</p>
+                    <p className="child-skill">Elm</p>
 
                     <p className="child-skill">Java</p>
                 </div>
