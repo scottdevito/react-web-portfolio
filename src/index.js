@@ -18,4 +18,4 @@ render((
       </Route>
       <Route path="*" component={NotFound} />
   </Router>
-), document.getElementById('root'))
+), document.getElementById('root'));
