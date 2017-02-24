@@ -1,7 +1,18 @@
+$green-light: #b2c99f;
+$green-dark: #93b18f;
+$green-vlight: #efefef;
+
+$button-text-dark: #555;
+$button-text-light: #fff;
+
+$primary-btn-border: #eeeeee;
+$default-btn-border: #adadad;
+
+$nav-a-text: #515151;
+
 body {
-  margin: 0;
-  padding: 0;
-  font-family: sans-serif;
+  color: rgb(93, 93, 93);
+  font-family: CircularStd, "Helvetica Neue", Helvetica, sans-serif;
 }
 
 /* Banner image */
