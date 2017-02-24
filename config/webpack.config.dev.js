@@ -104,6 +104,7 @@ module.exports = {
           /\.html$/,
           /\.(js|jsx)$/,
           /\.css$/,
+          /\.sass$/,
           /\.json$/,
           /\.svg$/
         ],
@@ -113,6 +114,13 @@ module.exports = {
           name: 'static/media/[name].[hash:8].[ext]'
         }
       },
+      
+      // Process SCSS
+      {
+        test: /\.scss$/,
+        loaders: ["style", "css", "sass"]
+      },
+
       // Process JS with Babel.
       {
         test: /\.(js|jsx)$/,
