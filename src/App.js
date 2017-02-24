@@ -27,18 +27,18 @@ window.onscroll = function(e) {
       scrollTop = document.body.scrollTop;
 
   // Intro is undefined if the About component isn't active
-  if ((scrollTop > range) && (intro != undefined)) {
+  if ((scrollTop > range) && (intro !== undefined)) {
       intro.classList.add("intro-container-scroll");
       banner.classList.add("blurred");
       nav.classList.add("nav-scroll");
-  } else if ((scrollTop < range) && (intro != undefined)) {
+  } else if ((scrollTop < range) && (intro !== undefined)) {
       intro.classList.remove("intro-container-scroll");
       banner.classList.remove("blurred");
       nav.classList.remove("nav-scroll");
-  } else if ((scrollTop > range) && ((contact != undefined) || (resume != undefined))) {
+  } else if ((scrollTop > range) && ((contact !== undefined) || (resume !== undefined))) {
       banner.classList.add("blurred");
       nav.classList.add("nav-scroll");
-  } else if ((scrollTop < range) && ((contact != undefined) || (resume != undefined))) {
+  } else if ((scrollTop < range) && ((contact !== undefined) || (resume !== undefined))) {
       banner.classList.remove("blurred");
       nav.classList.remove("nav-scroll");
   }
