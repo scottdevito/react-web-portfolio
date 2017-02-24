@@ -1,5 +1,4 @@
 import React from 'react';
-import './styles/App.css';
 
 import { Banner } from './components/banner';
 import { Nav } from './components/nav';
