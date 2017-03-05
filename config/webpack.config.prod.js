@@ -109,6 +109,7 @@ module.exports = {
           /\.html$/,
           /\.(js|jsx)$/,
           /\.css$/,
+          /\.scss$/,
           /\.json$/,
           /\.svg$/
         ],
@@ -117,6 +118,11 @@ module.exports = {
           limit: 10000,
           name: 'static/media/[name].[hash:8].[ext]'
         }
+      },
+      // Process SCSS
+      {
+        test: /\.scss$/,
+        loaders: ["style", "css", "sass"]
       },
       // Process JS with Babel.
       {
