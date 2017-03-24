@@ -16,8 +16,13 @@ body {
 }
 
 /* Banner image */
-img {
-  max-width: 100%;
+.banner {
+    background-image: url("https://s3.amazonaws.com/sdevito-web-portfolio/port-banner.png");
+    height: 45vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
 }
 
 /* Nav link styling */
@@ -254,12 +259,6 @@ a:hover {
   background-size: cover;
   transition: 0.5s ease all;
 }
-
-.banner-container {
-  display: flex;
-  justify-content: center;
-}
-
 
 /* Navbar styling pre-scroll */
 .navbar {
