@@ -1,12 +1,12 @@
 import React from 'react';
 
 import { Banner } from './components/banner';
-import { Nav } from './components/nav';
+import { Navigation } from './components/nav';
 
 export const App = ( { children } ) => {
     return(
         <div>
-          <Nav />
+          <Navigation />
           <Banner />
           {children}
         </div>

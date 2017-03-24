@@ -1,17 +1,23 @@
 import React from 'react';
 import { IndexLink, Link } from 'react-router';
+import { Navbar, NavItem, Nav } from 'react-bootstrap';
 
-export const Nav = () => {
+export const Navigation = () => {
     return (
-        <div className="navbar navbar-default navbar-fixed-top">
-            <div className="container-fluid">
-                <ul className="nav nav-pills nav-justified">
-                    <li className="navbar-text" role="presentation"><IndexLink to="/" activeClassName="active">Home</IndexLink></li>
-                    <li className="navbar-text" role="presentation"><a href="https://github.com/psilotec" target="_blank">GitHub</a></li>
-                    <li className="navbar-text" role="presentation"><Link to="/resume" activeClassName="active">Resume</Link></li>
-                    <li className="navbar-text" role="presentation"><Link to="/contact" activeClassName="active">Contact</Link></li>
-                </ul>
-            </div>
-        </div>
+        <Navbar fixedTop collapseOnSelect>
+            <Navbar.Header>
+            <Navbar.Brand>
+                <IndexLink to="/" activeClassName="active">Scott DeVito</IndexLink>
+            </Navbar.Brand>
+            <Navbar.Toggle />
+            </Navbar.Header>
+            <Navbar.Collapse>
+            <Nav>
+                <NavItem eventKey={1}><IndexLink to="/" activeClassName="active">Home</IndexLink></NavItem>
+                <NavItem eventKey={2}><Link to="/resume" activeClassName="active">Resume</Link></NavItem>
+                <NavItem eventKey={3}><Link to="/contact" activeClassName="active">Contact</Link></NavItem>
+            </Nav>
+            </Navbar.Collapse>
+        </Navbar>
     );
 };
