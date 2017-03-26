@@ -186,13 +186,9 @@ a:hover {
   width:60px;
 }
 
-.email-address {
-  margin-right: 25px;
-}
-
 .email-logo {
-  height: 150px;
-  width: 150px;
+  height: 130px;
+  width: 130px;
   margin-bottom: 5vh;
   margin-left: 5vw;
   margin-right: 5vw;
@@ -213,7 +209,8 @@ a:hover {
   min-width: 100px;
   max-width: 60%;
   position: relative;
-  margin: 0 auto;
+  margin-right: 1vw;
+  margin-left: 1vw;
   border: 2px solid transparent;
   transition: all .2s cubic-bezier(0.455, 0.030, 0.515, 0.955);
 
