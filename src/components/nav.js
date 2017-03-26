@@ -4,7 +4,7 @@ import { LinkContainer, IndexLinkContainer } from 'react-router-bootstrap';
 
 export const Navigation = () => {
     return (
-        <Navbar fixedTop collapseOnSelect>
+        <Navbar fixedTop collapseOnSelect fluid>
             <Navbar.Header>
             <Navbar.Brand>
                 <a href="/">Scott DeVito</a>
