@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { Banner } from './components/banner';
-import { Navigation } from './components/nav';
+import { Navigation } from './components/navigation';
 
 export const App = ( { children } ) => {
     return(
