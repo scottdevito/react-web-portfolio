@@ -119,7 +119,8 @@ a:hover {
 /* Resume filter size and positioning */
 .filters {
   margin-bottom: 20px;
-  max-width:60vw;
+  max-width: 60vw;
+  min-width: 360px;
 }
 
 /* Skills component */
@@ -141,6 +142,7 @@ a:hover {
   background-color: $green-vlight;
   border-color: #ddd;
   width: 40vw;
+  min-width: 350px;
 }
 
 /* Individual skill flex alignment */
