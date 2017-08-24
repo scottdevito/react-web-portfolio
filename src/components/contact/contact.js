@@ -11,11 +11,7 @@ export const Contact = () => {
         </a>
 
         <a href="mailto:scottadevito@gmail.com">
-          <img
-            className="email-logo"
-            src="https://s3.amazonaws.com/sdevito-web-portfolio/mailIcon1.png"
-            role="presentation"
-          />
+          <div className="email-logo" />
         </a>
 
         <a href="https://www.linkedin.com/scott-devito" target="_blank">

@@ -17,19 +17,21 @@ body {
 
 /* Banner image */
 .banner {
-    background-image: url("https://s3.amazonaws.com/sdevito-web-portfolio/port-banner.png");
-    height: 45vh;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
+  background-image: url("https://s3.amazonaws.com/sdevito-web-portfolio/port-banner.png");
+  box-shadow: rgba(0, 0, 0, .25) 1px 1px;
+  height: 45vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
 }
 
 /* Nav link styling */
 a {
   color: $nav-a-text;
 }
-a:hover, a:focus {
+a:hover,
+a:focus {
   color: $nav-a-text;
 }
 
@@ -82,7 +84,12 @@ a:hover {
   border-color: $primary-btn-border;
 }
 
-.btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn.active.focus {
+.btn:focus,
+.btn:active:focus,
+.btn.active:focus,
+.btn.focus,
+.btn:active.focus,
+.btn.active.focus {
   outline: none;
   outline-color: $primary-btn-border;
   outline-style: none;
@@ -90,12 +97,15 @@ a:hover {
   background-color: $green-dark;
 }
 
-.btn-primary:focus, .btn-primary.focus {
+.btn-primary:focus,
+.btn-primary.focus {
   color: $button-text-light;
   border-color: $primary-btn-border;
 }
 
-.btn-primary:active, .btn-primary.active, .open > .dropdown-toggle.btn-primary {
+.btn-primary:active,
+.btn-primary.active,
+.open > .dropdown-toggle.btn-primary {
   color: $button-text-light;
   background-color: #8ca424;
   border-color: $primary-btn-border;
@@ -185,15 +195,24 @@ a:hover {
 /* Contact component conent sizes and spacing */
 .email {
   height: 50px;
-  width:60px;
+  width: 60px;
 }
 
 .email-logo {
+  transition: all 1s ease;
+  background-size: contain;
+  background-image: url('https://s3.amazonaws.com/sdevito-web-portfolio/mailIcon1.png');
   height: 130px;
   width: 130px;
   margin-bottom: 5vh;
   margin-left: 5vw;
   margin-right: 5vw;
+}
+
+.email-logo:hover {
+  background-size: contain;
+  transition: all 1s ease;
+  background-image: url('https://s3.amazonaws.com/sdevito-web-portfolio/mailIcon2.png');
 }
 
 .contact-container {
@@ -203,7 +222,9 @@ a:hover {
 }
 
 /* Contact buttons */
-.contact-btn, .contact-btn:link, .contact-btn:visited {
+.contact-btn,
+.contact-btn:link,
+.contact-btn:visited {
   color: #333;
   font-size: .8em;
   letter-spacing: .1em;
@@ -216,7 +237,8 @@ a:hover {
   border: 2px solid transparent;
   transition: all .2s cubic-bezier(0.455, 0.030, 0.515, 0.955);
 
-  &:after, &:before {
+  &:after,
+  &:before {
     content: "";
     position: absolute;
     left: - 1em;
@@ -235,12 +257,13 @@ a:hover {
   &:hover {
     border-color: #97b494;
     transition: border-color .2s .2s cubic-bezier(0.455, 0.030, 0.515, 0.955);
-    
-    &:after, &:before {
-      right: -2px;      
+
+    &:after,
+    &:before {
+      right: -2px;
       transition: all .2s cubic-bezier(0.455, 0.030, 0.515, 0.955);
     }
-    
+
     &:before {
       left: -2px;
       right: auto;
@@ -311,7 +334,6 @@ a:hover {
   max-width: 550px;
   text-align: left;
 }
-
 
 /* 404 styling */
 .notFound {
