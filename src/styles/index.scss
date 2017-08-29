@@ -339,3 +339,46 @@ a:hover {
 .notFound {
   text-align: center;
 }
+
+.projects-display {
+  font-family: sans-serif;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.header-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #b2c99f;
+  height: 160px;
+  color: white;
+  padding: 20px;
+}
+
+.header-pic {
+  height: 85px;
+  width: 85px;
+}
+
+.header-text {
+  margin: 0;
+}
+
+.project-card {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  background-color: white;
+  height: 500px;
+}
+
+.project-display {
+  flex: 1 1 50%;
+  flex-direction: column;
+  width: 100%;
+}
