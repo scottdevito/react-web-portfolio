@@ -1,4 +1,5 @@
 import React from 'react';
+import ProjectCard from './project_card';
 
 const ProjectsDisplay = () =>
   <div className="projects-display">
@@ -12,39 +13,11 @@ const ProjectsDisplay = () =>
       <p className="header-text">545 contributions in the past year</p>
     </div>
 
-    <div className="project-card">
-      <div className="project-display">
-        <h4>Project Name</h4>
-        <img
-          className="header-pic"
-          src="https://avatars3.githubusercontent.com/u/16454542?v=4&s=460"
-          alt="github profile"
-        />
-      </div>
-      <div className="project-display">
-        <h4>Project Name</h4>
-        <img
-          className="header-pic"
-          src="https://avatars3.githubusercontent.com/u/16454542?v=4&s=460"
-          alt="github profile"
-        />
-      </div>
-      <div className="project-display">
-        <h4>Project Name</h4>
-        <img
-          className="header-pic"
-          src="https://avatars3.githubusercontent.com/u/16454542?v=4&s=460"
-          alt="github profile"
-        />
-      </div>
-      <div className="project-display">
-        <h4>Project Name</h4>
-        <img
-          className="header-pic"
-          src="https://avatars3.githubusercontent.com/u/16454542?v=4&s=460"
-          alt="github profile"
-        />
-      </div>
+    <div className="project-display">
+      <ProjectCard />
+      <ProjectCard />
+      <ProjectCard />
+      <ProjectCard />
     </div>
 
     <div className="header-box">
@@ -56,39 +29,11 @@ const ProjectsDisplay = () =>
       <h2 className="header-text">Long Island Javascript Meetup</h2>
     </div>
 
-    <div className="project-card">
-      <div className="project-display">
-        <h4>Project Name</h4>
-        <img
-          className="header-pic"
-          src="https://avatars3.githubusercontent.com/u/16454542?v=4&s=460"
-          alt="github profile"
-        />
-      </div>
-      <div className="project-display">
-        <h4>Project Name</h4>
-        <img
-          className="header-pic"
-          src="https://avatars3.githubusercontent.com/u/16454542?v=4&s=460"
-          alt="github profile"
-        />
-      </div>
-      <div className="project-display">
-        <h4>Project Name</h4>
-        <img
-          className="header-pic"
-          src="https://avatars3.githubusercontent.com/u/16454542?v=4&s=460"
-          alt="github profile"
-        />
-      </div>
-      <div className="project-display">
-        <h4>Project Name</h4>
-        <img
-          className="header-pic"
-          src="https://avatars3.githubusercontent.com/u/16454542?v=4&s=460"
-          alt="github profile"
-        />
-      </div>
+    <div className="project-display">
+      <ProjectCard />
+      <ProjectCard />
+      <ProjectCard />
+      <ProjectCard />
     </div>
   </div>;
 
