@@ -367,7 +367,7 @@ a:hover {
   margin: 0;
 }
 
-.project-card {
+.project-display {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -377,7 +377,7 @@ a:hover {
   height: 500px;
 }
 
-.project-display {
+.project-card {
   flex: 1 1 50%;
   flex-direction: column;
   width: 100%;
