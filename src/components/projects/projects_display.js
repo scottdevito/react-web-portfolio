@@ -14,10 +14,10 @@ const ProjectsDisplay = () =>
     </div>
 
     <div className="project-display">
-      <ProjectCard />
-      <ProjectCard />
-      <ProjectCard />
-      <ProjectCard />
+      <ProjectCard name="Lawman Jiu Jitsu Belt List" />
+      <ProjectCard name="React Web Portfolio" />
+      <ProjectCard name="Weather Cheese Pairing" />
+      <ProjectCard name="Lawman Jiu Jitsu Teaching Assistant" />
     </div>
 
     <div className="header-box">

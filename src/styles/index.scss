@@ -352,7 +352,7 @@ a:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #b2c99f;
+  background-color: rgb(62, 69, 60);
   height: 160px;
   color: white;
   padding: 20px;
@@ -361,6 +361,8 @@ a:hover {
 .header-pic {
   height: 85px;
   width: 85px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
 }
 
 .header-text {
@@ -373,12 +375,24 @@ a:hover {
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
-  background-color: white;
+  background-color: #ffffff;
   height: 500px;
 }
 
-.project-card {
+.project-div {
   flex: 1 1 50%;
   flex-direction: column;
   width: 100%;
+}
+
+.project-card {
+  background-color: rgb(178, 201, 159);
+  border: 1px solid #ddd;
+  border-radius: 16px;
+  margin: 0px 25% 0px 25%;
+  padding: 10px;
+}
+
+.card-text {
+  color: #ffffff;
 }
