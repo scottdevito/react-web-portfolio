@@ -14,7 +14,7 @@ export const Contact = () => {
           <div className="email-logo" />
         </a>
 
-        <a href="https://www.linkedin.com/scott-devito" target="_blank">
+        <a href="https://www.linkedin.com/in/scott-devito" target="_blank">
           <div className="contact-btn">
             <h5>LinkedIn</h5>
           </div>

@@ -19,6 +19,13 @@ export const Intro = () => {
           </p>
         </div>
       </div>
+      <div className="footer">
+        <img
+          className="mountains"
+          src="https://s3.amazonaws.com/sdevito-web-portfolio/mountains-tent.svg"
+          alt="mountain img"
+        />
+      </div>
     </div>
   );
 };
