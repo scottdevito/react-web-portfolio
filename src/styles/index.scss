@@ -398,3 +398,14 @@ a:hover {
   width: 50%;
   margin-bottom: 10px;
 }
+
+@media (max-width: 435px) {
+  .me {
+    height: 40%;
+    width: 50%;
+  }
+
+  .mountains {
+    width: 75%;
+  }
+}
