@@ -409,3 +409,112 @@ a:hover {
     width: 75%;
   }
 }
+
+/* Intro page cloud animation */
+
+.cloud-animation-div {
+  width: 100%;
+  height: 1px;
+  overflow: visible;
+}
+
+.clouds {
+  height: 5em;
+  width: 8em;
+}
+
+.cloud-first {
+  animation: cloudsMoveFromLeft 45s infinite;
+  margin-right: 20%;
+  margin-top: -25px;
+}
+
+.cloud-second {
+  animation: cloudsMoveFromLeft 120s infinite;
+  margin-right: 25%;
+  margin-top: 42px;
+}
+
+.cloud-third {
+  animation: cloudsMoveFromRight 90s infinite;
+  margin-right: 20%;
+  margin-top: 10px;
+}
+
+@keyframes cloudsMoveFromLeft {
+  0% {
+    transform: translateX(0rem);
+  }
+  50% {
+    transform: translateX(40rem);
+  }
+  100% {
+    transform: translateX(0rem);
+  }
+}
+
+@keyframes cloudsMoveFromRight {
+  0% {
+    transform: translateX(40rem);
+  }
+  50% {
+    transform: translateX(0rem);
+  }
+  100% {
+    transform: translateX(40rem);
+  }
+}
+
+/* Repositioning and size adjustment for medium screens */
+@media (max-width: 1024px) {
+  .clouds {
+    height: 2em;
+    width: 4em;
+  }
+
+  .cloud-first {
+    margin-right: 15%;
+    margin-top: -15px;
+  }
+
+  .cloud-second {
+    margin-right: 20%;
+    margin-top: 28px;
+  }
+
+  .cloud-third {
+    margin-right: 17%;
+    margin-top: 15px;
+  }
+
+  @keyframes cloudsMoveFromLeft {
+    0% {
+      transform: translateX(0rem);
+    }
+    50% {
+      transform: translateX(13rem);
+    }
+    100% {
+      transform: translateX(0rem);
+    }
+  }
+
+  @keyframes cloudsMoveFromRight {
+    0% {
+      transform: translateX(13rem);
+    }
+    50% {
+      transform: translateX(0rem);
+    }
+    100% {
+      transform: translateX(13rem);
+    }
+  }
+}
+/* Size adjustment for small screens */
+@media (max-width: 320px) {
+  .clouds {
+    height: 1em;
+    width: 2em;
+  }
+}
