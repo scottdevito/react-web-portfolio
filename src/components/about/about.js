@@ -7,7 +7,7 @@ class About extends Component {
       <div className="about">
         <div className="welcome">
           <h1>Welcome!</h1>
-          <p>Thanks for taking the time to stop by.</p>
+          <p>Thanks for taking the time to stop by</p>
         </div>
         <Intro />
       </div>
