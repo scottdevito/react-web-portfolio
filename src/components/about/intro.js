@@ -7,7 +7,7 @@ export const Intro = () => {
       <div className="intro-container">
         <img
           className="me"
-          src="https://s3.amazonaws.com/sdevito-web-portfolio/aboutMe.jpg"
+          src="https://s3.amazonaws.com/sdevito-web-portfolio/testingPresentation.png"
           role="presentation"
         />
         <div className="description">
