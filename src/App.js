@@ -23,7 +23,7 @@ window.onscroll = function(e) {
     contact = document.getElementsByClassName('contact')[0],
     intro = document.getElementsByClassName('intro-container')[0],
     range = 50,
-    scrollTop = document.body.scrollTop;
+    scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
 
   // Intro is undefined if the About component isn't active
   if (scrollTop > range && intro !== undefined) {
