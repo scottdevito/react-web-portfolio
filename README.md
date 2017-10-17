@@ -21,7 +21,7 @@ A site to showcase my projects and share my contact information.
 ### Agile-style Trello Project Board:
 https://trello.com/b/CZsAuJ8l/web-portfolio
 
-### Design to site![Idea](https://s3.amazonaws.com/sdevito-web-portfolio/20170829_181026-1.jpg "Before")
+![Idea](https://s3.amazonaws.com/sdevito-web-portfolio/20170829_181026-1.jpg "Before")
 
 ![Execution](https://s3.amazonaws.com/sdevito-web-portfolio/webReadme1 "After")
 
