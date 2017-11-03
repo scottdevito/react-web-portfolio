@@ -383,11 +383,17 @@ a:hover {
   padding: 20px;
 }
 
-.header-pic {
+.header-img {
   height: 85px;
   width: 85px;
-  border: 1px solid #ddd;
+  border: 2px solid #ddd;
   border-radius: 4px;
+}
+
+.project-img {
+  height: 85px;
+  width: 85px;
+  box-shadow: 1px 1px;
 }
 
 .header-text {
@@ -411,9 +417,6 @@ a:hover {
 }
 
 .project-card {
-  background-color: rgb(178, 201, 159);
-  border: 1px solid #ddd;
-  border-radius: 16px;
   margin: 0px 25% 0px 25%;
   padding: 10px;
 }

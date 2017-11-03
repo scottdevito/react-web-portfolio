@@ -1,16 +1,15 @@
 import React from 'react';
 import ProjectCard from './project_card';
 
-const ProjectsDisplay = () =>
+const ProjectsDisplay = () => (
   <div className="projects-display">
     <div className="header-box">
       <img
-        className="header-pic"
+        className="header-img"
         src="https://avatars3.githubusercontent.com/u/16454542?v=4&s=460"
         alt="github profile"
       />
       <h2 className="header-text">scottdevito</h2>
-      <p className="header-text">545 contributions in the past year</p>
     </div>
 
     <div className="project-display">
@@ -22,7 +21,7 @@ const ProjectsDisplay = () =>
 
     <div className="header-box">
       <img
-        className="header-pic"
+        className="header-img"
         src="https://avatars3.githubusercontent.com/u/31260897?v=4&s=200"
         alt="github profile"
       />
@@ -35,6 +34,7 @@ const ProjectsDisplay = () =>
       <ProjectCard />
       <ProjectCard />
     </div>
-  </div>;
+  </div>
+);
 
 export default ProjectsDisplay;

@@ -1,13 +1,11 @@
 import React from 'react';
 
-const ProjectCard = props =>
+const ProjectCard = props => (
   <div className="project-div">
     <div className="project-card">
-      <h4 className="card-text">
-        {props.name}
-      </h4>
+      <h4 className="card-text">{props.name}</h4>
       <img
-        className="header-pic"
+        className="project-img"
         src="https://avatars3.githubusercontent.com/u/16454542?v=4&s=460"
         alt="github profile"
       />
@@ -16,6 +14,7 @@ const ProjectCard = props =>
         right.
       </p>
     </div>
-  </div>;
+  </div>
+);
 
 export default ProjectCard;
