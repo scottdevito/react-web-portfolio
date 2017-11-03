@@ -16,6 +16,9 @@ export const Navigation = () => {
           <IndexLinkContainer to="/">
             <NavItem>Home</NavItem>
           </IndexLinkContainer>
+          <LinkContainer to="/projects">
+            <NavItem>Projects</NavItem>
+          </LinkContainer>
           <LinkContainer to="/resume">
             <NavItem>Resume</NavItem>
           </LinkContainer>
