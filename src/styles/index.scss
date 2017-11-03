@@ -377,9 +377,9 @@ a:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: rgb(62, 69, 60);
+  background-color: #b2c99f;
   height: 160px;
-  color: white;
+  color: #000000;
   padding: 20px;
 }
 
@@ -388,12 +388,6 @@ a:hover {
   width: 85px;
   border: 2px solid #ddd;
   border-radius: 4px;
-}
-
-.project-img {
-  height: 85px;
-  width: 85px;
-  box-shadow: 1px 1px;
 }
 
 .header-text {
@@ -407,7 +401,6 @@ a:hover {
   justify-content: space-around;
   align-items: center;
   background-color: #ffffff;
-  height: 500px;
 }
 
 .project-div {
@@ -417,12 +410,15 @@ a:hover {
 }
 
 .project-card {
-  margin: 0px 25% 0px 25%;
   padding: 10px;
 }
 
+.card-title {
+  font-weight: bold;
+}
+
 .card-text {
-  color: #ffffff;
+  margin-top: 1em;
 }
 
 .mountains {
