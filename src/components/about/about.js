@@ -9,7 +9,7 @@ class About extends Component {
         <div className="welcome">
           <h1>Welcome!</h1>
           <p>Thanks for taking the time to stop by</p>
-          <Glyphicon glyph="chevron-down" />
+          <Glyphicon glyph="chevron-down" className="chevron-down-hover" />
         </div>
         <Intro />
       </div>

@@ -13,7 +13,7 @@ $nav-a-text: #515151;
 body {
   color: rgb(93, 93, 93);
   font-family: LLCircularWeb, 'Helvetica Neue', Helvetica, sans-serif;
-  font-weight: 700;
+  font-weight: 500;
   font-style: normal;
 }
 
@@ -40,6 +40,10 @@ a:focus {
 a:hover {
   color: #000000;
   text-decoration: none;
+}
+
+.panel-title {
+  font-weight: 700;
 }
 
 /* Panel heading styling */
@@ -155,6 +159,7 @@ a:hover {
   border-color: #ddd;
   width: 40vw;
   min-width: 350px;
+  font-weight: 700;
 }
 
 /* Individual skill flex alignment */
@@ -300,6 +305,27 @@ a:hover {
 /* Home page styling */
 .welcome {
   height: 20vh;
+}
+
+.chevron-down-hover {
+  animation: chevronHover 2s infinite;
+}
+
+.chevron-down-disappear {
+  display: none;
+  transition: all 2s ease;
+}
+
+@keyframes chevronHover {
+  0% {
+    transform: translateY(0rem);
+  }
+  30% {
+    transform: translateY(3rem);
+  }
+  100% {
+    transform: translateY(0rem);
+  }
 }
 
 .intro-container {
