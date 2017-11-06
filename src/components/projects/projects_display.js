@@ -45,8 +45,14 @@ const ProjectsDisplay = () => (
     </div>
 
     <div className="project-display">
-      <ProjectCard name="Array Methods Presentation" />
-      <ProjectCard />
+      <ProjectCard
+        name="Array Methods Presentation"
+        img="https://s3.amazonaws.com/sdevito-web-portfolio/LIJS%20Array%20Methods%20Monitor.svg?response-content-disposition=inline&X-Amz-Security-Token=AgoGb3JpZ2luEDgaCXVzLWVhc3QtMSKAApEgdEbldob0Jy6BLGCSv1x5pNa8Usb1seEtE5y2aMIX%2BR9w8oP%2Bz3YZ2pcJ1LlOfwsLJcmSqA1RASnVcUs7wijGDjxgEDw7LOtjW8RRBYCiTS9wffEEDPjcvxgqdnfcBP5h1eMK0r4UAqmeZSVNc9c1hfjitNGekviErIaApcI1al%2BhRsEQgk2wpXpAx%2BxK0umwx9md5ANKeuKTC6VzQbG9zqQ2LdtV10dAL31%2FOTEOd7ZUe900j3Mg3egX7tnRX%2Bg%2FWGoUdJ8wI7bV6qF3WqyYS%2FiDrMcsP2O9xfnpGgixxD%2BKinSZj7AQONn3pyCx7LmnMF08xmnR5k%2F2gOhOpR8qnQIIbhAAGgw2MjkyMTAyOTU2NzQiDLdiKNQ11B0HJiGTcSr6AfdydYTMpugo%2BnqvKlCXyfLxtH5%2FcF6sCJdwWFf%2FH7qQOWVbVTe%2FqpoFkq1677NxNeBHbykZwLiM20sGahRgO5BF5e%2BBv1ugo4ec3MDyEbIQgVx8e9EBMzqV8MsSF5XTlTdrChmWHkeKDYU9TQmCGlRCjDLzcH2UCwOfJIhpVOvQqMS8gDOcB0TgyMiQk%2BzR4mkSwOErgNvcnTmpm5PE2ocQeoIc0iN9OYxoLfQcpP3nH5BzeNlpPalQIfCYT1XNCW7GKr10H1W8gIYKLfQSfV%2FILz%2B3%2BZGK%2BT8tcUnLji0QaHr%2Bbff9P2AXq%2BXc8v7dS3AZZSWbAu4MVAcwts7%2FzwU%3D&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20171106T043833Z&X-Amz-SignedHeaders=host&X-Amz-Expires=300&X-Amz-Credential=ASIAJH332WXG3QOBXHPA%2F20171106%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=b42dd570ec2afe9db89aafea32754d388708e30903ab6ebe2de5ab8c4ba785a1"
+      />
+      <ProjectCard
+        name="Data Structures and Algorithms Presentation"
+        img="https://s3.amazonaws.com/sdevito-web-portfolio/LIJS%20Data%20Structures%20and%20Algos%20Monitor.svg?response-content-disposition=inline&X-Amz-Security-Token=AgoGb3JpZ2luEDgaCXVzLWVhc3QtMSKAApEgdEbldob0Jy6BLGCSv1x5pNa8Usb1seEtE5y2aMIX%2BR9w8oP%2Bz3YZ2pcJ1LlOfwsLJcmSqA1RASnVcUs7wijGDjxgEDw7LOtjW8RRBYCiTS9wffEEDPjcvxgqdnfcBP5h1eMK0r4UAqmeZSVNc9c1hfjitNGekviErIaApcI1al%2BhRsEQgk2wpXpAx%2BxK0umwx9md5ANKeuKTC6VzQbG9zqQ2LdtV10dAL31%2FOTEOd7ZUe900j3Mg3egX7tnRX%2Bg%2FWGoUdJ8wI7bV6qF3WqyYS%2FiDrMcsP2O9xfnpGgixxD%2BKinSZj7AQONn3pyCx7LmnMF08xmnR5k%2F2gOhOpR8qnQIIbhAAGgw2MjkyMTAyOTU2NzQiDLdiKNQ11B0HJiGTcSr6AfdydYTMpugo%2BnqvKlCXyfLxtH5%2FcF6sCJdwWFf%2FH7qQOWVbVTe%2FqpoFkq1677NxNeBHbykZwLiM20sGahRgO5BF5e%2BBv1ugo4ec3MDyEbIQgVx8e9EBMzqV8MsSF5XTlTdrChmWHkeKDYU9TQmCGlRCjDLzcH2UCwOfJIhpVOvQqMS8gDOcB0TgyMiQk%2BzR4mkSwOErgNvcnTmpm5PE2ocQeoIc0iN9OYxoLfQcpP3nH5BzeNlpPalQIfCYT1XNCW7GKr10H1W8gIYKLfQSfV%2FILz%2B3%2BZGK%2BT8tcUnLji0QaHr%2Bbff9P2AXq%2BXc8v7dS3AZZSWbAu4MVAcwts7%2FzwU%3D&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20171106T043842Z&X-Amz-SignedHeaders=host&X-Amz-Expires=300&X-Amz-Credential=ASIAJH332WXG3QOBXHPA%2F20171106%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=1408cdcb8ecc17c97d030dc3738846a89f07cee88ae31e983af795e87df8f97b"
+      />
     </div>
 
     <div className="header-box">
@@ -59,10 +65,10 @@ const ProjectsDisplay = () => (
     </div>
 
     <div className="project-display">
-      <ProjectCard />
-      <ProjectCard />
-      <ProjectCard />
-      <ProjectCard />
+      <ProjectCard img="https://s3.amazonaws.com/sdevito-web-portfolio/Mountains.svg" />
+      <ProjectCard img="https://s3.amazonaws.com/sdevito-web-portfolio/Autmn+Cabin.svg" />
+      <ProjectCard img="https://s3.amazonaws.com/sdevito-web-portfolio/Buttons.svg" />
+      <ProjectCard img="https://s3.amazonaws.com/sdevito-web-portfolio/Books+and+Tea.svg" />
     </div>
   </div>
 );
