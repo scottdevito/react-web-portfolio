@@ -19,6 +19,7 @@ export const App = ({ children }) => {
 window.onscroll = function(e) {
   var banner = document.getElementsByClassName('banner')[0],
     nav = document.getElementsByClassName('navbar')[0],
+    projs = document.getElementsByClassName('projects-display')[0],
     resume = document.getElementsByClassName('resume')[0],
     contact = document.getElementsByClassName('contact')[0],
     intro = document.getElementsByClassName('intro-container')[0],
@@ -39,13 +40,13 @@ window.onscroll = function(e) {
     chevron.classList.remove('chevron-down-disappear');
   } else if (
     scrollTop > range &&
-    (contact !== undefined || resume !== undefined)
+    (contact !== undefined || resume !== undefined || projs !== undefined)
   ) {
     banner.classList.add('blurred');
     nav.classList.add('nav-scroll');
   } else if (
     scrollTop < range &&
-    (contact !== undefined || resume !== undefined)
+    (contact !== undefined || resume !== undefined || projs !== undefined)
   ) {
     banner.classList.remove('blurred');
     nav.classList.remove('nav-scroll');
