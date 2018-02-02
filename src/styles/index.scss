@@ -117,12 +117,6 @@ a:hover {
   border-color: $primary-btn-border;
 }
 
-/* About component */
-.about {
-  text-align: center;
-  padding: 8vh 0vw 0vh 0vw;
-}
-
 /* Resume component */
 .resume {
   display: flex;
@@ -302,32 +296,6 @@ a:hover {
   transition: all 0.5s ease;
 }
 
-/* Home page styling */
-.welcome {
-  height: 20vh;
-}
-
-.chevron-down-hover {
-  animation: chevronHover 2s infinite;
-}
-
-.chevron-down-disappear {
-  display: none;
-  transition: all 2s ease;
-}
-
-@keyframes chevronHover {
-  0% {
-    transform: translateY(0rem);
-  }
-  30% {
-    transform: translateY(3rem);
-  }
-  100% {
-    transform: translateY(0rem);
-  }
-}
-
 .intro-container {
   display: flex;
   flex-direction: row;
@@ -380,7 +348,7 @@ a:hover {
   background-color: #b2c99f;
   height: 160px;
   color: #000000;
-  padding: 20px;
+  padding: 8em;
 }
 
 .header-img {
@@ -414,7 +382,7 @@ a:hover {
 }
 
 .project-card {
-  padding: 10px;
+  padding: 4em;
 }
 
 .card-title {

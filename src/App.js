@@ -23,7 +23,6 @@ window.onscroll = function(e) {
     resume = document.getElementsByClassName('resume')[0],
     contact = document.getElementsByClassName('contact')[0],
     intro = document.getElementsByClassName('intro-container')[0],
-    chevron = document.getElementsByClassName('chevron-down-hover')[0],
     range = 50,
     scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
 
@@ -32,12 +31,10 @@ window.onscroll = function(e) {
     intro.classList.add('intro-container-scroll');
     banner.classList.add('blurred');
     nav.classList.add('nav-scroll');
-    chevron.classList.add('chevron-down-disappear');
   } else if (scrollTop < range && intro !== undefined) {
     intro.classList.remove('intro-container-scroll');
     banner.classList.remove('blurred');
     nav.classList.remove('nav-scroll');
-    chevron.classList.remove('chevron-down-disappear');
   } else if (
     scrollTop > range &&
     (contact !== undefined || resume !== undefined || projs !== undefined)

@@ -1,0 +1,48 @@
+/* Home page styling */
+.welcome {
+  padding-left: 25%;
+  padding-right: 25%;
+  padding-top: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+@media (max-width: 767px) {
+  .welcome {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    padding-top: 0;
+    flex-direction: column;
+  }
+
+  .card-wrapper {
+    padding-bottom: 1.5rem;
+  }
+}
+
+.card-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
+}
+
+.welcome-card {
+  background-color: #fff;
+  min-width: 260px;
+  min-height: 300px;
+  border: solid 5px black;
+  border-radius: 4px;
+}
+
+.welcome-card-center {
+  background-color: #fff;
+  min-width: 260px;
+  min-height: 325px;
+  border: solid 5px black;
+  border-radius: 4px;
+}
