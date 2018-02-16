@@ -3,6 +3,7 @@ import { render } from 'react-dom';
 import { App } from './App';
 import { Router, Route, IndexRoute, browserHistory } from 'react-router';
 import './styles/index.scss';
+import 'typeface-roboto';
 
 import { NotFound } from './components/not_found';
 import About from './components/about/about';
