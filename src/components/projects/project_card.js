@@ -3,13 +3,17 @@ import styled from 'styled-components';
 
 const ProjectCard = props => (
   <StyledProjectDiv>
-    <a href={props.projLink} target="_blank" rel="noopener noreferrer">
-      <StyledProjectCard>
+    <StyledProjectCard>
+      <StyledProjectLink
+        href={props.projLink}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         <StyledCardTitle>{props.name}</StyledCardTitle>
         <img src={props.img} alt="project" />
         <StyledCardText>{props.desc}</StyledCardText>
-      </StyledProjectCard>
-    </a>
+      </StyledProjectLink>
+    </StyledProjectCard>
   </StyledProjectDiv>
 );
 
@@ -31,4 +35,8 @@ const StyledCardTitle = styled.h3`
 
 const StyledCardText = styled.p`
   margin-top: 1em;
+`;
+
+const StyledProjectLink = styled.a`
+  text-decoration: none;
 `;

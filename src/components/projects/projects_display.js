@@ -21,6 +21,18 @@ const ProjectsDisplay = () => (
 
     <StyledProjectDisplay>
       <ProjectCard
+        name="Jade and Antler"
+        img="https://s3.amazonaws.com/sdevito-web-portfolio/Jade+and+Antler+Monitor.svg"
+        desc="Company website for Jade and Antler: a yoga business that holds classes and seminars in San Diego and Denver."
+        projLink="https://jadeandantler.com"
+      />
+      <ProjectCard
+        name="Bad Beer Tasting"
+        img="https://s3.amazonaws.com/sdevito-web-portfolio/Bad+Beer+Tasting+Monitor.svg"
+        desc="A React app used to host a bad beer tasting party."
+        projLink="https://badbeertasting.com"
+      />
+      <ProjectCard
         name="Lawman Jiu Jitsu Belt List"
         img="https://s3.amazonaws.com/sdevito-web-portfolio/LMJJ+Monitor.svg"
         desc="A React site to allow LMJJ students to log in and access technique information for their current rank."
@@ -62,6 +74,12 @@ const ProjectsDisplay = () => (
     </StyledHeaderBox>
 
     <StyledProjectDisplay>
+      <ProjectCard
+        name="React Native Presentation"
+        img="https://s3.amazonaws.com/sdevito-web-portfolio/LIJS+React+Native+Presentation.svg"
+        desc="A presentation for the LIJS Meetup that covers the basics of React Native."
+        projLink="https://github.com/lijs-meetup/react-native"
+      />
       <ProjectCard
         name="Array Methods Presentation"
         img="https://s3.amazonaws.com/sdevito-web-portfolio/LIJS+Array+Methods+Monitor.svg"
