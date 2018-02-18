@@ -1,15 +1,34 @@
 import React from 'react';
+import styled from 'styled-components';
 
 const ProjectCard = props => (
-  <div className="project-div">
+  <StyledProjectDiv>
     <a href={props.projLink} target="_blank" rel="noopener noreferrer">
-      <div className="project-card">
-        <h3 className="card-title">{props.name}</h3>
-        <img className="project-img" src={props.img} alt="project" />
-        <p className="card-text">{props.desc}</p>
-      </div>
+      <StyledProjectCard>
+        <StyledCardTitle>{props.name}</StyledCardTitle>
+        <img src={props.img} alt="project" />
+        <StyledCardText>{props.desc}</StyledCardText>
+      </StyledProjectCard>
     </a>
-  </div>
+  </StyledProjectDiv>
 );
 
 export default ProjectCard;
+
+const StyledProjectDiv = styled.div`
+  flex: 1 1 50%;
+  flex-direction: column;
+  width: 100%;
+`;
+
+const StyledProjectCard = styled.div`
+  padding: 4em;
+`;
+
+const StyledCardTitle = styled.h3`
+  font-weight: bold;
+`;
+
+const StyledCardText = styled.p`
+  margin-top: 1em;
+`;
