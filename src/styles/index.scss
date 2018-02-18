@@ -335,46 +335,8 @@ a:hover {
   text-align: center;
 }
 
-.projects-display {
-  font-family: sans-serif;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-}
-
-.header-box {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: #b2c99f;
-  height: 160px;
-  color: #000000;
-  padding: 8em;
-}
-
-.header-img {
-  height: 85px;
-  width: 85px;
-  border: 2px solid #ddd;
-  border-radius: 4px;
-}
-
 .no-border {
   border-style: none;
-}
-
-.header-text {
-  margin: 0;
-}
-
-.project-display {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
-  background-color: #ffffff;
 }
 
 .project-div {

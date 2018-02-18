@@ -1,24 +1,25 @@
 import React from 'react';
+import styled from 'styled-components';
+
 import ProjectCard from './project_card';
 
 const ProjectsDisplay = () => (
-  <div className="projects-display">
-    <div className="header-box">
+  <StyledProjectsDisplay>
+    <StyledHeaderBox>
       <a
         href="https://github.com/scottdevito"
         target="_blank"
         rel="noopener noreferrer"
       >
-        <img
-          className="header-img"
+        <StyledHeaderImage
           src="https://avatars3.githubusercontent.com/u/16454542?v=4&s=460"
           alt="github profile"
         />
       </a>
-      <h2 className="header-text">scottdevito</h2>
-    </div>
+      <StyledHeaderText>scottdevito</StyledHeaderText>
+    </StyledHeaderBox>
 
-    <div className="project-display">
+    <StyledProjectDisplay>
       <ProjectCard
         name="Lawman Jiu Jitsu Belt List"
         img="https://s3.amazonaws.com/sdevito-web-portfolio/LMJJ+Monitor.svg"
@@ -43,24 +44,24 @@ const ProjectsDisplay = () => (
         desc="An interactive teaching assistant app for LMJJ instructors to use on the mat."
         projLink="http://jj-guide.com"
       />
-    </div>
+    </StyledProjectDisplay>
 
-    <div className="header-box">
+    <StyledHeaderBox>
       <a
         href="https://www.meetup.com/long-island-javascript-group/"
         target="_blank"
         rel="noopener noreferrer"
       >
-        <img
-          className="header-img no-border"
+        <StyledHeaderImage
+          className="no-border"
           src="https://avatars3.githubusercontent.com/u/31260897?v=4&s=200"
           alt="github profile"
         />
       </a>
-      <h2 className="header-text">Long Island Javascript Meetup</h2>
-    </div>
+      <StyledHeaderText>Long Island Javascript Meetup</StyledHeaderText>
+    </StyledHeaderBox>
 
-    <div className="project-display">
+    <StyledProjectDisplay>
       <ProjectCard
         name="Array Methods Presentation"
         img="https://s3.amazonaws.com/sdevito-web-portfolio/LIJS+Array+Methods+Monitor.svg"
@@ -73,26 +74,63 @@ const ProjectsDisplay = () => (
         desc="A presentation for the LIJS Meetup that covers data structures and algorithms."
         projLink="https://github.com/lijs-meetup"
       />
-    </div>
+    </StyledProjectDisplay>
 
-    <div className="header-box">
+    <StyledHeaderBox>
       <a href="https://figma.com" target="_blank" rel="noopener noreferrer">
-        <img
-          className="header-img"
+        <StyledHeaderImage
           src="https://downloads.intercomcdn.com/i/o/12862/9a035be09d24574778b2f63e/touch-180.png"
           alt="figma profile"
         />
       </a>
-      <h2 className="header-text">Designs</h2>
-    </div>
+      <StyledHeaderText>Designs</StyledHeaderText>
+    </StyledHeaderBox>
 
-    <div className="project-display">
+    <StyledProjectDisplay>
       <ProjectCard img="https://s3.amazonaws.com/sdevito-web-portfolio/Mountains.svg" />
       <ProjectCard img="https://s3.amazonaws.com/sdevito-web-portfolio/Autmn+Cabin.svg" />
       <ProjectCard img="https://s3.amazonaws.com/sdevito-web-portfolio/Buttons.svg" />
       <ProjectCard img="https://s3.amazonaws.com/sdevito-web-portfolio/Books+and+Tea.svg" />
-    </div>
-  </div>
+    </StyledProjectDisplay>
+  </StyledProjectsDisplay>
 );
 
 export default ProjectsDisplay;
+
+const StyledProjectsDisplay = styled.div`
+  font-family: sans-serif;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+`;
+
+const StyledProjectDisplay = styled.div`
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #ffffff;
+`;
+
+const StyledHeaderBox = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 5rem;
+  color: #000000;
+  padding: 5em;
+  background: linear-gradient(135deg, #e4fcd0 1%, #829870 100%);
+`;
+
+const StyledHeaderImage = styled.img`
+  height: 85px;
+  width: 85px;
+  border: 2px solid #ddd;
+  border-radius: 4px;
+`;
+
+const StyledHeaderText = styled.h2`
+  margin: 0;
+`;
