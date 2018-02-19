@@ -30,93 +30,10 @@ body {
   position: relative;
 }
 
-/* Nav link styling */
-a {
-  color: $nav-a-text;
-}
-a:hover,
-a:focus {
-  color: $nav-a-text;
-}
-
-a:hover {
-  color: #000000;
-  text-decoration: none;
-}
-
-.panel-title {
-  font-weight: 700;
-}
-
 /* Panel heading styling */
 .panel-default > .panel-heading {
   background-color: $green-light;
   border-color: #ddd;
-}
-
-/* Default button styling - Filter Button */
-.btn-default:hover {
-  color: $button-text-dark;
-  background-color: $green-light;
-  border-color: $default-btn-border;
-}
-
-.btn-default:focus {
-  color: $button-text-dark;
-  background-color: $green-light;
-  border-color: $default-btn-border;
-}
-
-.btn-default:active {
-  color: $button-text-dark;
-  background-color: $green-light;
-  border-color: $default-btn-border;
-}
-
-/* Primary button styling - Resume Button */
-.btn-primary {
-  color: $button-text-light;
-  background-color: $green-dark;
-  border-color: $primary-btn-border;
-}
-
-.btn-primary:hover {
-  color: $button-text-light;
-  background-color: $green-light;
-  border-color: $primary-btn-border;
-}
-
-.btn-primary.focus {
-  color: $button-text-light;
-  background-color: $green-light;
-  border-color: $primary-btn-border;
-}
-
-.btn:focus,
-.btn:active:focus,
-.btn.active:focus,
-.btn.focus,
-.btn:active.focus,
-.btn.active.focus {
-  outline: none;
-  outline-color: $primary-btn-border;
-  outline-style: none;
-  outline-width: thin;
-  background-color: $green-dark;
-}
-
-.btn-primary:focus,
-.btn-primary.focus {
-  color: $button-text-light;
-  border-color: $primary-btn-border;
-}
-
-.btn-primary:active,
-.btn-primary.active,
-.open > .dropdown-toggle.btn-primary {
-  color: $button-text-light;
-  background-color: #8ca424;
-  border-color: $primary-btn-border;
 }
 
 /* Resume component */
@@ -126,13 +43,6 @@ a:hover {
   align-items: center;
   justify-content: center;
   padding: 2vh 0;
-}
-
-/* Resume filter size and positioning */
-.filters {
-  margin-bottom: 20px;
-  max-width: 60vw;
-  min-width: 360px;
 }
 
 /* Skills component */
@@ -275,11 +185,6 @@ a:hover {
 }
 
 /* Banner styles, effects, and align*/
-.blurred {
-  -webkit-filter: blur(2px); /* Chrome, Safari, Opera */
-  filter: blur(2px);
-}
-
 .banner {
   background-size: cover;
   transition: 0.5s ease all;
