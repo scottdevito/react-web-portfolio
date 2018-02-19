@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
 import TabNav from './tab_nav';
+import DownloadResumeButton from './download_resume_button';
 import { Full } from './full';
 import { Skills } from './skills';
 import { Experience } from './experience';
@@ -33,8 +34,9 @@ class Resume extends Component {
             href="https://s3.amazonaws.com/sdevito-web-portfolio/Scott_DeVito_SoftwareEngineer_Resume.pdf"
             target="_blank"
             role="button"
+            style={{ textDecoration: ' none' }}
           >
-            Download Resume
+            <DownloadResumeButton />
           </a>
 
           <Full visible={this.state.visibleComponent === 'full'} />
