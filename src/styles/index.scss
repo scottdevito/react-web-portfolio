@@ -340,8 +340,9 @@ a:hover {
 }
 
 .mountains {
-  width: 50%;
+  width: 40%;
   margin-bottom: 10px;
+  margin-top: 2.8rem;
 }
 
 /* Intro page oud animation */
@@ -360,7 +361,7 @@ a:hover {
 .cloud-first {
   animation: cloudsMoveFromLeft 45s infinite;
   margin-right: 35%;
-  margin-top: -25px;
+  margin-top: -10px;
 }
 
 .cloud-second {
@@ -399,41 +400,34 @@ a:hover {
   }
 }
 
-/* Repositioning and size adjustment for small screens */
-@media (max-width: 435px) {
-  .me {
-    height: 30%;
-    width: 35%;
-  }
-
-  .welcome {
-    margin-bottom: 200px;
-  }
-
+/* Size adjustment for very large screens */
+@media (max-width: 2562px) {
   .mountains {
-    width: 75%;
+    width: 36%;
   }
 
-  .description {
-    margin-top: 5%;
+  .clouds {
+    height: 3em;
+    width: 6em;
   }
 
-  .intro-container {
-    flex-direction: column;
-    align-items: center;
+  .cloud-animation-div {
+    margin-top: 0.5rem;
   }
+}
 
-  .description {
-    text-align: center;
-    margin-right: 5%;
+/* Size adjustment for very large screens */
+@media (max-width: 1438px) {
+  .mountains {
+    width: 50%;
   }
 }
 
 /* Repositioning and size adjustment for medium screens */
-@media (max-width: 1024px) {
+@media (max-width: 1022px) {
   .clouds {
-    height: 2em;
-    width: 4em;
+    height: 1.5em;
+    width: 3em;
   }
 
   .cloud-first {
@@ -475,6 +469,37 @@ a:hover {
     }
   }
 }
+
+/* Repositioning and size adjustment for small screens */
+@media (max-width: 435px) {
+  .me {
+    height: 32%;
+    width: 35%;
+  }
+
+  .welcome {
+    margin-bottom: 200px;
+  }
+
+  .mountains {
+    width: 75%;
+  }
+
+  .description {
+    margin-top: 5%;
+  }
+
+  .intro-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .description {
+    text-align: center;
+    margin-right: 5%;
+  }
+}
+
 /* Size adjustment for very small screens */
 @media (max-width: 320px) {
   .clouds {
