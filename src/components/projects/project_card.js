@@ -10,7 +10,11 @@ const ProjectCard = props => (
         rel="noopener noreferrer"
       >
         <StyledCardTitle>{props.name}</StyledCardTitle>
-        <img src={props.img} alt="project" />
+        <StyledProjectImage
+          src={props.img}
+          definedWidth={props.definedWidth}
+          alt="project"
+        />
         <StyledCardText>{props.desc}</StyledCardText>
       </StyledProjectLink>
     </StyledProjectCard>
@@ -39,4 +43,8 @@ const StyledCardText = styled.p`
 
 const StyledProjectLink = styled.a`
   text-decoration: none;
+`;
+
+const StyledProjectImage = styled.img`
+  width: ${props => (props.definedWidth ? props.definedWidth : '286px')};
 `;

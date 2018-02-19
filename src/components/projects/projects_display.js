@@ -43,6 +43,7 @@ const ProjectsDisplay = () => (
         img="https://s3.amazonaws.com/sdevito-web-portfolio/Good+Days+Phone.svg"
         desc="A React Native app to help you reflect on what your perfect day would look like."
         projLink="https://github.com/scottdevito/good-days"
+        definedWidth={'118px'}
       />
       <ProjectCard
         name="React Web Portfolio"
