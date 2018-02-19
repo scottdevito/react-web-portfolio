@@ -20,7 +20,7 @@ class TabNav extends React.Component {
   };
 
   render() {
-    const { classes } = this.props;
+    const { classes, toggleResumeFilter } = this.props;
 
     return (
       <Paper className={classes.root}>
@@ -31,10 +31,30 @@ class TabNav extends React.Component {
           textColor="inherit"
           centered
         >
-          <Tab label="Full" />
-          <Tab label="Skills" />
-          <Tab label="Experience" />
-          <Tab label="Education" />
+          <Tab
+            label="Full"
+            onClick={() => {
+              toggleResumeFilter('full');
+            }}
+          />
+          <Tab
+            label="Skills"
+            onClick={() => {
+              toggleResumeFilter('skills');
+            }}
+          />
+          <Tab
+            label="Experience"
+            onClick={() => {
+              toggleResumeFilter('experience');
+            }}
+          />
+          <Tab
+            label="Education"
+            onClick={() => {
+              toggleResumeFilter('education');
+            }}
+          />
         </Tabs>
       </Paper>
     );

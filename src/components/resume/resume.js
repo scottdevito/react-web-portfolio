@@ -17,61 +17,17 @@ class Resume extends Component {
   }
 
   //Event Handler for resume filter
-  toggleResumeFilter(id, event) {
+  toggleResumeFilter = id => {
     this.setState({
       visibleComponent: id,
     });
-  }
+  };
+
   render() {
     return (
       <div>
-        <TabNav />
+        <TabNav toggleResumeFilter={this.toggleResumeFilter} />
         <div className="resume">
-          <div className="filters">
-            <div
-              className="btn-group btn-group-justified"
-              role="group"
-              aria-label="..."
-            >
-              <div className="btn-group" role="group">
-                <button
-                  type="button"
-                  className="btn btn-default"
-                  onClick={this.toggleResumeFilter.bind(this, 'full')}
-                >
-                  Full Resume
-                </button>
-              </div>
-              <div className="btn-group" role="group">
-                <button
-                  type="button"
-                  className="btn btn-default"
-                  onClick={this.toggleResumeFilter.bind(this, 'skills')}
-                >
-                  Skills
-                </button>
-              </div>
-              <div className="btn-group" role="group">
-                <button
-                  type="button"
-                  className="btn btn-default"
-                  onClick={this.toggleResumeFilter.bind(this, 'experience')}
-                >
-                  Experience
-                </button>
-              </div>
-              <div className="btn-group" role="group">
-                <button
-                  type="button"
-                  className="btn btn-default"
-                  onClick={this.toggleResumeFilter.bind(this, 'education')}
-                >
-                  Education
-                </button>
-              </div>
-            </div>
-          </div>
-
           <a
             className="btn btn-primary btn-sm"
             href="https://s3.amazonaws.com/sdevito-web-portfolio/Scott_DeVito_SoftwareEngineer_Resume.pdf"
