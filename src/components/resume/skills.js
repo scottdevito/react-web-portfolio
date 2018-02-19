@@ -6,7 +6,9 @@ export const Skills = props => {
       <h3 className="skills header">Skills</h3>
       <div className="panel panel-default">
         <div className="panel-body skills-panel">
-          <p className="child-skill">JavaScript (ES6)</p>
+          <p className="child-skill">JavaScript</p>
+
+          <p className="child-skill">ES2015+</p>
 
           <p className="child-skill">React JS</p>
 
@@ -16,19 +18,17 @@ export const Skills = props => {
 
           <p className="child-skill">HTML5</p>
 
-          <p className="child-skill">CSS3/SASS</p>
+          <p className="child-skill">CSS</p>
 
           <p className="child-skill">Git/GitHub</p>
 
-          <p className="child-skill">SQL/NoSQL</p>
+          <p className="child-skill">NoSQL</p>
 
-          <p className="child-skill">GraphQL</p>
+          <p className="child-skill">SQL</p>
 
           <p className="child-skill">Agile</p>
 
           <p className="child-skill">Elm</p>
-
-          <p className="child-skill">Java</p>
         </div>
       </div>
     </div>
