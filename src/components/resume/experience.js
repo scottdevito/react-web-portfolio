@@ -6,6 +6,21 @@ export const Experience = props => {
       <h3 className="experience header">Experience</h3>
       <div className="experience panel panel-default">
         <div className="panel-heading">
+          <h3 className="panel-title">SharePoint Administrator</h3>
+        </div>
+        <div className="panel-body">
+          <h4 className="company">Bethpage Federal Credit Union</h4>
+          <h5 className="dates">January 2018 - Present</h5>
+          <p>
+            Use HTML/CSS/Javascript to create front end for SharePoint intranet
+            pages. Create pages/workflows to facilitate collaboration between
+            650+ employees.
+          </p>
+        </div>
+      </div>
+
+      <div className="experience panel panel-default">
+        <div className="panel-heading">
           <h3 className="panel-title">IT Analyst</h3>
         </div>
         <div className="panel-body">

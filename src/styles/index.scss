@@ -19,6 +19,19 @@ body {
   padding: 0;
 }
 
+a {
+  color: $nav-a-text;
+}
+a:hover,
+a:focus {
+  color: $nav-a-text;
+}
+
+a:hover {
+  color: #000000;
+  text-decoration: none;
+}
+
 /* Banner image */
 .banner {
   background-image: url('https://s3.amazonaws.com/sdevito-web-portfolio/port-banner.png');
@@ -34,6 +47,19 @@ body {
 .panel-default > .panel-heading {
   background-color: $green-light;
   border-color: #ddd;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-left: 1px;
+  border-radius: 2px;
+}
+
+.panel-body {
+  margin-left: 0.5rem;
+  margin-reight: 0.5rem;
+}
+
+.panel-title {
+  margin: 0.5rem;
 }
 
 /* Resume component */
@@ -75,7 +101,7 @@ body {
   margin: 10px 0 0 2%;
   flex-grow: 1;
   height: 30px;
-  width: calc(86% * (1/4));
+  width: calc(86% * (1 / 4));
   justify-content: center;
 }
 
@@ -154,7 +180,7 @@ body {
   &:before {
     content: '';
     position: absolute;
-    left: - 1em;
+    left: -1em;
     top: -2px;
     height: 3.3em;
     width: 0;
@@ -403,6 +429,15 @@ body {
     text-align: center;
     margin-right: 5%;
   }
+
+  .panel-heading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+  }
 }
 
 /* Size adjustment for very small screens */
@@ -415,5 +450,14 @@ body {
   .me {
     height: 30%;
     width: 45%;
+  }
+
+  .panel-heading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
   }
 }
