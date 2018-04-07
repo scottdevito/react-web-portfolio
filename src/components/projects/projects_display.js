@@ -21,6 +21,12 @@ const ProjectsDisplay = () => (
 
     <StyledProjectDisplay>
       <ProjectCard
+        name="Sunny B Solar"
+        img="https://s3.amazonaws.com/sdevito-web-portfolio/Sunny+B+Solar+Monitor.svg"
+        desc="Company website for Sunny B Solar: a solar installation business that installs solar systems for clients in New York."
+        projLink="https://sunny-b-solar.firebaseapp.com"
+      />
+      <ProjectCard
         name="Jade and Antler"
         img="https://s3.amazonaws.com/sdevito-web-portfolio/Jade+and+Antler+Monitor.svg"
         desc="Company website for Jade and Antler: a yoga business that holds classes and seminars in San Diego and Denver."
