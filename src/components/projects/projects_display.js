@@ -33,6 +33,13 @@ const ProjectsDisplay = () => (
         projLink="https://jadeandantler.com"
       />
       <ProjectCard
+        name="Deep Space Fun"
+        img="https://s3.amazonaws.com/sdevito-web-portfolio/Deep+Space+Monitor.svg"
+        desc="Messing around with a responsive space landing page."
+        projLink="http://deep-space-fun.surge.sh"
+      />
+
+      <ProjectCard
         name="Bad Beer Tasting"
         img="https://s3.amazonaws.com/sdevito-web-portfolio/Bad+Beer+Tasting+Monitor.svg"
         desc="A React app used to host a bad beer tasting party."
@@ -81,6 +88,12 @@ const ProjectsDisplay = () => (
     </StyledHeaderBox>
 
     <StyledProjectDisplay>
+      <ProjectCard
+        name="Callbacks, Promises and Async/Await Presentation"
+        img="https://s3.amazonaws.com/sdevito-web-portfolio/Async+Await+Presentation.svg"
+        desc="A presentation for the LIJS Meetup that covers the basics of async Javascript."
+        projLink="https://docs.google.com/presentation/d/15myJKm2YrTfv9L0-TGCsltJLZzsMNYs7-YDIvEC1AFQ/edit?usp=sharing"
+      />
       <ProjectCard
         name="React Native Presentation"
         img="https://s3.amazonaws.com/sdevito-web-portfolio/LIJS+React+Native+Presentation.svg"
