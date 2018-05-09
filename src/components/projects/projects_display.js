@@ -112,7 +112,11 @@ const ProjectsDisplay = () => (
     </StyledHeaderBox>
 
     <StyledProjectDisplay>
-      <ProjectCard img="https://s3.amazonaws.com/sdevito-web-portfolio/Mountains.svg" />
+      <ProjectCard
+        img="https://s3.amazonaws.com/sdevito-web-portfolio/SceneCardShadow.svg"
+        definedWidth={'300px'}
+      />
+      <ProjectCard img="https://s3.amazonaws.com/sdevito-web-portfolio/mountains-tent.svg" />
       <ProjectCard img="https://s3.amazonaws.com/sdevito-web-portfolio/Autmn+Cabin.svg" />
       <ProjectCard img="https://s3.amazonaws.com/sdevito-web-portfolio/Buttons.svg" />
       <ProjectCard img="https://s3.amazonaws.com/sdevito-web-portfolio/Books+and+Tea.svg" />
