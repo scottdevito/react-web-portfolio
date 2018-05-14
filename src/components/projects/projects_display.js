@@ -21,6 +21,12 @@ const ProjectsDisplay = () => (
 
     <StyledProjectDisplay>
       <ProjectCard
+        name="Storm Lacrosse Academy"
+        img="https://s3.amazonaws.com/sdevito-web-portfolio/Storm+AcademyMonitor.svg"
+        desc="Company website for Storm Lacrosse Academy: a lacrosse business that holds multiple clinics per year for children of all ages."
+        projLink="https://s3.amazonaws.com/sdevito-web-portfolio/StormMockup.png"
+      />
+      <ProjectCard
         name="Sunny B Solar"
         img="https://s3.amazonaws.com/sdevito-web-portfolio/Sunny+B+Solar+Monitor.svg"
         desc="Company website for Sunny B Solar: a solar installation business that installs solar systems for clients in New York."
